@@ -1,0 +1,1 @@
+# Scrape area code from website [CODIGOSDDD!](https://www.codigosddd.com.br/)

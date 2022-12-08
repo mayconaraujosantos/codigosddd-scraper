@@ -19,15 +19,17 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-devtools:3.0.0'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator:3.0.0'
 	implementation 'org.jsoup:jsoup:1.15.3'
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.13'
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator:3.0.0'
 	implementation 'org.mapstruct:mapstruct:1.5.3.Final'
-	implementation 'javax.validation:validation-api:2.0.1.Final'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:3.5.3'
 
