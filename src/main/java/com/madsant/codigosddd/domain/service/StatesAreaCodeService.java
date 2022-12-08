@@ -16,4 +16,6 @@ public interface StatesAreaCodeService {
     public List<StatesAreaCode> listOfAreaCodeByCity(String city);
 
     public List<StatesAreaCode> listOfAreaCodeByDDD(String ddd);
+    
+    public Set<StatesAreaCode> getAllStatesFromPage() throws IOException;
 }

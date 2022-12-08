@@ -6,13 +6,19 @@ import java.net.MalformedURLException;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import com.madsant.codigosddd.domain.repository.StatesAreaCodeRepository;
+import com.madsant.codigosddd.scraper.collector.WebsiteContentParser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
 public class StatesAreaCodeServiceImpl implements StatesAreaCodeService {
-
+    
+    private final WebsiteContentParser websiteContentParser;
+   
+    
     @Override
     public void loadContents() throws MalformedURLException, IOException {}
 
@@ -35,5 +41,10 @@ public class StatesAreaCodeServiceImpl implements StatesAreaCodeService {
     @Override
     public List<StatesAreaCode> listOfAreaCodeByDDD(String ddd) {
         return null;
+    }
+
+    @Override
+    public Set<StatesAreaCode> getAllStatesFromPage() throws IOException{
+        return websiteContentParser.getAllStatesLinksFromPage();
     }
 }

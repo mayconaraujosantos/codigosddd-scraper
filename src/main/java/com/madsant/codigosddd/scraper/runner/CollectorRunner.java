@@ -17,10 +17,6 @@ public class CollectorRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        // websiteContentParser.getAllStatesLinksFromPage();
-        // log.info(
-        //     "loading states from page {}",
-        //     collectorProperties.getWebsite().getUrl()
-        // );
+         
     }
 }
